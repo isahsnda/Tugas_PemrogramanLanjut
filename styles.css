@@ -1,0 +1,121 @@
+/* Reset dan font */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  background: url('Background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Background full screen */
+.background {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup container */
+.popup {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent agar popup tetap terbaca */
+}
+
+/* Bagian kiri */
+.left {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.left h2 {
+  position: absolute;
+  bottom: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+
+/* Bagian kanan */
+.right {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right h3 {
+  margin-bottom: 15px;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.right input,
+.right select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Privacy */
+.privacy {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Halaman thank you */
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+
+.thankyou h1 {
+  font-size: 2em;
+}
+
+.thankyou p {
+  margin: 10px 0;
+}
+
+.thankyou a {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
