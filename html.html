@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventaris Lab</title>
   <style>
-    /* Reset dasar */
     * {
       margin: 0;
       padding: 0;
@@ -19,7 +18,7 @@
     }
 
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       text-align: center;
     }
@@ -29,18 +28,25 @@
       color: #333;
     }
 
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
     .item {
       background-color: #fff;
       padding: 20px;
       border: 2px solid #ddd;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      display: inline-block;
       text-align: center;
+      width: 300px;
     }
 
     .item img {
-      width: 300px;
+      width: 100%;
       height: auto;
       object-fit: cover;
       border: 4px solid #444;
@@ -64,15 +70,30 @@
   <div class="container">
     <h1>Daftar Inventaris Laboratorium</h1>
 
-    <div class="item">
-      <img src="Multimeter.jpeg" alt="Multimeter Digital">
-      <h3>Multimeter Digital</h3>
-      <p>
-        <strong>Kode:</strong> LAB-ELEC-001<br>
-        <strong>Jumlah:</strong> 10<br>
-        <strong>Kondisi:</strong> Baik<br>
-        <strong>Lokasi:</strong> Rak A1
-      </p>
+    <div class="items">
+      <!-- Multimeter -->
+      <div class="item">
+        <img src="Multimeter.jpeg" alt="Multimeter Digital">
+        <h3>Multimeter Digital</h3>
+        <p>
+          <strong>Kode:</strong> LAB-ELEC-001<br>
+          <strong>Jumlah:</strong> 10<br>
+          <strong>Kondisi:</strong> Baik<br>
+          <strong>Lokasi:</strong> Rak A1
+        </p>
+      </div>
+
+      <!-- Osiloskop -->
+      <div class="item">
+        <img src="Osiloskop.jpeg" alt="Osiloskop Digital">
+        <h3>Osiloskop Digital</h3>
+        <p>
+          <strong>Kode:</strong> LAB-ELEC-002<br>
+          <strong>Jumlah:</strong> 5<br>
+          <strong>Kondisi:</strong> Baik<br>
+          <strong>Lokasi:</strong> Rak B2
+        </p>
+      </div>
     </div>
 
   </div>
