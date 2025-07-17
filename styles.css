@@ -4,7 +4,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: sans-serif;
-  background: url('Background.jpg') no-repeat center center;
+  background: url('Background.jpeg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
