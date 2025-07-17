@@ -3,81 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Inventaris Lab</title>
+  <title>Inventaris Lab</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <h1>Daftar Inventaris Laboratorium</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Nama Alat</th>
-          <th>Kode Inventaris</th>
-          <th>Jumlah</th>
-          <th>Kondisi</th>
-          <th>Lokasi</th>
-          <th>Keterangan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Multimeter Digital</td>
-          <td>LAB-ELEC-001</td>
-          <td>10</td>
-          <td>Baik</td>
-          <td>Rak A1</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Oscilloscope</td>
-          <td>LAB-ELEC-002</td>
-          <td>5</td>
-          <td>Baik</td>
-          <td>Meja Praktikum 1</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Power Supply DC</td>
-          <td>LAB-ELEC-003</td>
-          <td>7</td>
-          <td>Baik</td>
-          <td>Rak A2</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Function Generator</td>
-          <td>LAB-ELEC-004</td>
-          <td>3</td>
-          <td>Rusak Ringan</td>
-          <td>Meja Praktikum 2</td>
-          <td>Perlu kalibrasi</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Breadboard</td>
-          <td>LAB-ELEC-005</td>
-          <td>20</td>
-          <td>Baik</td>
-          <td>Laci Alat</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>ESP32 Module</td>
-          <td>LAB-IOT-001</td>
-          <td>15</td>
-          <td>Baik</td>
-          <td>Box Komponen</td>
-          <td>Digunakan untuk praktikum IoT</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="inventaris-grid">
+
+      <div class="item">
+        <img src="img/multimeter.jpg" alt="Multimeter Digital">
+        <h3>Multimeter Digital</h3>
+        <p>Kode: LAB-ELEC-001<br>Jumlah: 10<br>Kondisi: Baik<br>Lokasi: Rak A1</p>
+      </div>
+
+      <div class="item">
+        <img src="img/oscilloscope.jpg" alt="Oscilloscope">
+        <h3>Oscilloscope</h3>
+        <p>Kode: LAB-ELEC-002<br>Jumlah: 5<br>Kondisi: Baik<br>Lokasi: Meja Praktikum 1</p>
+      </div>
+
+      <div class="item">
+        <img src="img/power_supply.jpg" alt="Power Supply DC">
+        <h3>Power Supply DC</h3>
+        <p>Kode: LAB-ELEC-003<br>Jumlah: 7<br>Kondisi: Baik<br>Lokasi: Rak A2</p>
+      </div>
+
+      <div class="item">
+        <img src="img/function_generator.jpg" alt="Function Generator">
+        <h3>Function Generator</h3>
+        <p>Kode: LAB-ELEC-004<br>Jumlah: 3<br>Kondisi: Rusak Ringan<br>Lokasi: Meja Praktikum 2</p>
+      </div>
+
+      <div class="item">
+        <img src="img/breadboard.jpg" alt="Breadboard">
+        <h3>Breadboard</h3>
+        <p>Kode: LAB-ELEC-005<br>Jumlah: 20<br>Kondisi: Baik<br>Lokasi: Laci Alat</p>
+      </div>
+
+      <div class="item">
+        <img src="img/esp32.jpg" alt="ESP32 Module">
+        <h3>ESP32 Module</h3>
+        <p>Kode: LAB-IOT-001<br>Jumlah: 15<br>Kondisi: Baik<br>Lokasi: Box Komponen</p>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
